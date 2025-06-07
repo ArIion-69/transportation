@@ -14,46 +14,73 @@
       <div class="top-bar__right"><span class="top-bar__text">We are always here:</span><a class="top-bar__phone" href="tel:+37256958874">+372 5695 8874</a><a class="top-bar__email" href="mailto:info@movingexpert.ee">info@movingexpert.ee</a></div>
     </div>
   </div>
-  <div class="menu container"><img src="static/img/logo.svg" alt="logo"/>
-    <ul class="nav">
-      <li class="nav-li">Moving services
-        <ul class="nav-li-dropdown active">
-          <li class="nav-li-dropdown-link">Local Moving
-            <ul class="nav-li-dropdown-link-second__dropdown active"> 
-              <li>Local Moving</li>
-              <li>Long Distance</li>
-              <li>Labor only Moving</li>
-            </ul>
-          </li>
-          <li class="nav-li-dropdown-link">Long Distance
-            <ul class="nav-li-dropdown-link-second__dropdown active"> 
-              <li>Local Moving</li>
-              <li>Long Distance</li>
-              <li>Labor only Moving</li>
-            </ul>
-          </li>
-          <li class="nav-li-dropdown-link">Labor only Moving
-            <ul class="nav-li-dropdown-link-second__dropdown active"> 
-              <li>Local Moving</li>
-              <li>Long Distance</li>
-              <li>Labor only Moving</li>
-            </ul>
-          </li>
-          <li class="nav-li-dropdown-link">Commercial Moving
-            <ul class="nav-li-dropdown-link-second__dropdown active">
-              <li>Local Moving</li>
-              <li>Long Distance</li>
-              <li>Labor only Moving</li>
-            </ul>
-          </li>
-        </ul>
+  <nav class="main-nav container">
+    <div class="nav-top"><a class="logo" href="#"><img src="static/img/logo.svg" alt=""/></a>
+      <div class="nav-controls"><a class="order-btn2" href="#">Order service</a>
+        <button class="burger" id="burger-toggle"><img src="static/img/btn_burger.svg" alt=""/></button>
+      </div>
+    </div>
+    <ul class="nav-list" id="main-menu">
+      <li class="nav-item has-sub"><a href="#">Moving services</a>
+        <div class="sub-menu-wrapper">
+          <ul class="sub-menu">
+            <li class="has-sub"><a href="#">Local Moving</a>
+              <ul class="sub-menu second-level">
+                <li class="has-sub"><a href="#">Long Distance</a>
+                  <ul class="sub-menu third-level">
+                    <li><a href="#">Option A</a></li>
+                    <li><a href="#">Option B</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Long Distance</a></li>
+                <li><a href="#">Labor only Moving</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Commercial Moving</a></li>
+          </ul>
+        </div>
       </li>
-      <li class="nav-li">Oversized cargo</li>
-      <li class="nav-li">Garbage removal and disposal</li>
-      <li class="nav-li">Loader services</li>
-    </ul>
-    <div class="language">EN</div><a class="btn" href="#">Order service</a>
-  </div>
+      <li class="nav-item has-sub"><a href="#">Oversized cargo</a>
+        <div class="sub-menu-wrapper">
+          <ul class="sub-menu">
+            <li class="has-sub"><a href="#">Safes</a>
+              <ul class="sub-menu second-level">
+                <li><a href="#">Digital Safes</a></li>
+                <li><a href="#">Fireproof Safes</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Pianos</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item has-sub"><a href="#">Garbage removal and disposal</a>
+        <div class="sub-menu-wrapper">
+          <ul class="sub-menu">
+            <li class="has-sub"><a href="#">Construction waste</a>
+              <ul class="sub-menu second-level">
+                <li><a href="#">Concrete</a></li>
+                <li><a href="#">Wood</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Old furniture</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item has-sub"><a href="#">Loader services</a>
+        <div class="sub-menu-wrapper">
+          <ul class="sub-menu">
+            <li class="has-sub"><a href="#">Packing</a>
+              <ul class="sub-menu second-level">
+                <li><a href="#">Fragile Items</a></li>
+                <li><a href="#">Heavy Items</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Unloading</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul><a class="order-btn" href="#">Order service</a>
+  </nav>
   <div class="hero container"> 
     <div class="hero-item"> 
       <p>Time to move</p><span>forward</span>
@@ -115,11 +142,12 @@
       </div>
       <div class="card">
         <h4>Garbage removal</h4>
-        <p>Your move should be easy and stress-free, no matter the distance or size. Receive a custom quote from White Glove Movers
+        <p>Your move should be easy and stress-free, no matter the distance or size. Receive a custom quote from White Glove Movers</p>
+        <ul>
           <li>Construction garbage</li>
           <li>Appliances</li>
           <li>Old furniture</li>
-        </p>
+        </ul>
         <button class="btn">Order service</button>
       </div>
     </div><a class="show-more">Show more <span>↓</span></a>
@@ -160,7 +188,7 @@
     </div>
     <div class="faq-content">
       <ul class="faq-list">
-        <li class="faq-item active"><span>WHAT IS THE MONTHLY COST OF YOUR APP?</span>
+        <li class="faq-item active"><span>WHAT IS THE MONTHLY COST OF YOUR APP? </span>
           <p>Our MovingExpert team will not make you worry while your things are on the way, and will carefully load them into the car and deliver them to your new apartment or office.</p>
           <p>We carry out relocations quickly and efficiently, offering the most convenient conditions for you.</p>
         </li>

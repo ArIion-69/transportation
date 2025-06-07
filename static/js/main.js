@@ -29,3 +29,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+  document.getElementById('burger-toggle').addEventListener('click', function () {
+    document.getElementById('main-menu').classList.toggle('active');
+  });
+
+  document.querySelectorAll('.nav-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function () {
+      const parent = this.closest('.nav-item');
+      parent.classList.toggle('open');
+    });
+  });
+
+document.querySelectorAll('.nav-item.has-sub > a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault()
+    const parent = link.closest('.nav-item')
+    parent.classList.toggle('open')
+
+    // Закрыть другие, если нужно
+    document.querySelectorAll('.nav-item.has-sub').forEach(item => {
+      if (item !== parent) item.classList.remove('open')
+    })
+  })
+})
+
+document.querySelectorAll('.sub-menu li.has-sub > a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault()
+    const parent = link.closest('li.has-sub')
+    parent.classList.toggle('open')
+  })
+})
